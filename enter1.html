@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="pic/old/favicon.ico">
+    <title>Pingkan's Library</title>
+
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+
+  
+    #bg
+    {
+        background: url(pic/old/enter1_bg-2018.jpg)no-repeat center;
+        background-size: cover;/* 盡量全都看到 */
+        position:absolute;
+         top:0px;
+        left:0px;
+        width:100%;
+        height:100%;
+        overflow:auto;
+
+        opacity: 0.2;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-name: bgchange;
+        -moz-animation-duration: 4s;
+        -moz-animation-name: bgchange;
+
+        animation-fill-mode : forwards ;
+    }
+
+
+    @-webkit-keyframes bgchange 
+    {
+       0%
+        {
+            opacity: 0.1;
+        }
+        100% 
+        {
+            opacity: 1.0;
+        }  
+         
+    }
+    @-moz-keyframes bgchange 
+    {
+       0%
+        {
+            opacity: 0.1;
+        }
+        100% 
+        {
+            opacity: 1.0;
+        }  
+    }
+
+
+
+    img
+    {
+        opacity:0.2;
+        filter:alpha(opacity=20); /* 针对 IE8 以及更早的版本 */
+
+    }
+    img:hover 
+    {
+        -webkit-transition: all 0.4s linear;
+        -moz-transition: all 0.4s linear;
+        -o-transition: all  0.4s linear;
+        transition: all  0.4s linear;
+        opacity:1;
+        filter:alpha(opacity=100); /* 针对 IE8 以及更早的版本 */
+    }
+    .anima
+    {
+        height:25%;
+        color: #000000;
+        background-color:#FFFFFF;
+        opacity: 0.4;
+        font-family: Rockwell;
+        text-align: center;
+        position:relative;
+
+        -webkit-transition: 1s; 
+        -moz-transition: 1s; 
+    }
+
+
+    .left
+    {
+        -webkit-animation-duration: 2s;
+        -webkit-animation-name: moveleft;
+        -moz-animation-duration: 2s;
+        -moz-animation-name: moveleft;
+        animation-fill-mode : forwards ;
+    }
+
+    @-webkit-keyframes moveleft
+    {   
+        0%
+        {
+            left: 100%;
+        }
+        100% 
+        {
+            left: 0%;
+        }  
+         
+    }
+    @-moz-keyframes moveleft
+    {
+       0%
+        {
+            left: 100%;
+        }
+        100% 
+        {
+            left: 0%;
+        }  
+    }
+
+
+    .right
+    {
+        -webkit-animation-duration: 2s;
+        -webkit-animation-name: moveright;
+        -moz-animation-duration: 2s;
+        -moz-animation-name: moveright;
+        animation-fill-mode : forwards ;
+    }
+
+    @-webkit-keyframes moveright
+    {   
+        0%
+        {
+            right: 100%;
+        }
+        100% 
+        {
+            right: 0%;
+        }  
+         
+    }
+    @-moz-keyframes moveright
+    {
+       0%
+        {
+            right: 100%;
+        }
+        100% 
+        {
+            right: 0%;
+        }  
+    }
+    .anima:hover
+    {
+            color: #FFFFFF;
+            background-color:#000000;
+            opacity: 0.7;
+            transform: scale(1.3,1.3) rotateX(360deg); 
+         
+    }
+    
+    h1{
+        font-size: 2.2rem;
+        padding-top:4rem; 
+        padding-bottom:2rem; 
+    }
+
+
+    </style>
+
+
+    <script type="text/javascript">
+
+
+   function goto(select)
+   {
+    switch(select){
+        case 1:
+        location.reload();
+        break;
+        case 2:
+        location.reload();
+        break;
+        case 3:
+        location.reload();
+        break;
+        case 4:
+        location.href = "index.html";
+        break;
+
+    }
+   }
+    </script>
+</head>
+
+<body>
+           
+    <div id="bg">
+    
+
+
+        <div class="anima left"  onclick="goto(1)">
+            <h1>Fashion Outfit</h1>
+        </div>
+        <div class="anima right" onclick="goto(2)">
+            <h1>The Calendar</h1>
+        </div>
+        <div class="anima left" onclick="goto(3)">
+            <h1>Where amazing happens</h1>
+        </div>
+        <div class="anima right" onclick="goto(4)">
+            <h1>Back to home</h1>
+        </div>
+    </div>
+
+
+</div>
+</body>
+
+</html>
