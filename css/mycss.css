@@ -287,7 +287,7 @@ a:visited, a:hover, a:active {
 .my-top-box {
   width: 100%;
   margin: 0 auto;
-  padding: 2.5rem 0 1.5rem 0;
+  padding: 3rem 0 1rem 0;
   color: #0c1b44;
   overflow: hidden;
   background: url(../pic/topbg.jpg);
@@ -713,6 +713,9 @@ a:visited, a:hover, a:active {
 }
 
 @media (max-width: 991.98px) {
+  .my-top-box {
+    padding: 2.5rem 0 1.5rem 0;
+  }
   .my-top-flexbox-showbg {
     margin: 0 auto;
   }
