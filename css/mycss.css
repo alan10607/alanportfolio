@@ -143,18 +143,18 @@ a:visited, a:hover, a:active {
   transform: rotate(0deg) translate(0px, 0px);
   transition: ease all .5s;
   display: block;
-  width: 24px;
+  width: 28px;
   height: 2px;
   border-radius: 1px;
 }
 
 .my-navbar-toggler .icon-bar+.icon-bar {
   /*間隔空間*/
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .my-navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(7px, 7px);
   transition: ease all .5s;
 }
 
@@ -164,7 +164,7 @@ a:visited, a:hover, a:active {
 }
 
 .my-navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(7px, -7px);
   transition: ease all .5s;
 }
 
@@ -568,17 +568,14 @@ a:visited, a:hover, a:active {
 .my-video {
   max-width: 500px;
   width: 100%;
-  margin: 0 auto 90px auto;
+  margin: 0 auto;
+  padding-bottom: 70px;
 }
 
-.my-art-title {
-  padding: 3rem 15px 1rem 15px;
-  color: #0c1b44;
-  width: 70%;
-  max-width: 1200px;
-  font-size: 0.9rem;
-  margin: 0 auto;
+.my-video + .my-video{
+  padding-top: 120px;
 }
+
 .my-video-box {
   width: 100%;
   position: relative;
