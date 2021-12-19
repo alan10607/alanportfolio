@@ -131,6 +131,7 @@ a:visited, a:hover, a:active {
   border: none;
   background: transparent;
   padding: 6px;
+  cursor: pointer;
 }
 
 .my-navbar-toggler:focus {
@@ -710,6 +711,13 @@ a:visited, a:hover, a:active {
 }
 
 @media (max-width: 991.98px) {
+  .my-navbar-toggler {
+    padding: 6px 12px;
+    height: 70px;
+  }
+  .my-navbar-toggler .icon-bar {
+    width: 33px;
+  }
   .my-top-box {
     padding: 2.5rem 0 2.5rem 0;
   }
