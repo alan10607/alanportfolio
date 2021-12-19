@@ -1,15 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400');
-@import url('https://fonts.googleapis.com/css?family=El+Messiri:400');
 body {
-  font-family: 'Raleway', 'Noto Sans TC', Helvetica, Arial, 'LiHei Pro', DFKai-sb, sans-serif;
-  font-weight: 400!important;
-  margin: 0 auto;
+  font-family: "Times New Roman", Times, sans-serif;
   background-color: #fcfcfc;
 }
 
 .my-font1 {
-  font-family: 'El Messiri', 'Noto Sans TC', Helvetica, Arial, 'LiHei Pro', DFKai-sb, sans-serif;
+  font-family: 'El Messiri';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -102,9 +97,9 @@ a:visited, a:hover, a:active {
 /* Navbar Part */
 
 #my-navbar {
-  background-color: #FCFCFCA0;
+  background-color: #fcfcfce3;
   color: #0c1b43;
-  border-bottom: 0.5px solid #fcfcfcA0;
+  border-bottom: 0.5px solid #0c1b4369;
   position: fixed;
   width: 100%;
   top: 0;
@@ -120,6 +115,14 @@ a:visited, a:hover, a:active {
   /* Safari 和 Chrome */
   -o-transition-duration: .5s;
   /* Opera */
+}
+
+.my-navbar-show {
+  visibility: visible;
+  opacity: 100;
+}
+
+.my-navbar-hidden {
   visibility: hidden;
   opacity: 0;
 }
@@ -227,16 +230,6 @@ a:visited, a:hover, a:active {
   padding-top: 5rem;
 }
 
-.mynavitem-box-bar .mynavitem-box .mynavitem-box-eng {
-  color: #999;
-  margin-bottom: 0rem;
-}
-
-.mynavitem-box-bar .mynavitem-box .mynavitem-box-engcs {
-  color: #999;
-  font-size: 0.6rem;
-}
-
 #mynavitem .nav-item {
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
@@ -287,7 +280,7 @@ a:visited, a:hover, a:active {
 .my-top-box {
   width: 100%;
   margin: 0 auto;
-  padding: 3rem 0 1rem 0;
+  padding: 3rem 0 3rem 0;
   color: #0c1b44;
   overflow: hidden;
   background: url(../pic/topbg.jpg);
@@ -310,6 +303,7 @@ a:visited, a:hover, a:active {
   transition-duration: .7s;
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
+  margin: 20vh auto 18vh auto;
 }
 
 .my-top-bg {
@@ -371,7 +365,7 @@ a:visited, a:hover, a:active {
 }
 
 .my-top-flexbox-showbg {
-  margin: 20vh auto 30vh auto;
+  margin: 25vh auto 25vh auto;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   -webkit-transform: scale(1.01);
@@ -427,6 +421,37 @@ a:visited, a:hover, a:active {
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem 15px 3rem 15px;
+}
+
+.my-skills-box{
+  max-width: 1200px;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.my-skills-box span{
+  color: #0c1b44;
+  font-size: 1.6rem;
+}
+
+.my-skills-box ul{
+  font-size: 1rem;
+  color: #0c1b44;
+  padding-left: 35px;
+  margin: 0;
+}
+
+.my-skills-textbox{
+  margin: 0 0 1.5rem 2rem;
+  flex: 1 1 330px;
+}
+
+.my-skills-box li{
+  padding: 1px 0;
 }
 
 .my-art-flexbox {
@@ -487,13 +512,17 @@ a:visited, a:hover, a:active {
   content: ' ';
 }
 
-.my-art-box ul {
+.my-art-box .my-art-textbox ul {
   padding-left: 20px;
   margin: 0;
 }
 
-.my-art-box ol {
+.my-art-box .my-art-textbox ol {
   padding-left: 18px;
+}
+
+.my-art-box .my-art-textbox ul p{
+  margin: 0;
 }
 
 .my-art-textbox a {
@@ -539,9 +568,17 @@ a:visited, a:hover, a:active {
 .my-video {
   max-width: 500px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 90px auto;
 }
 
+.my-art-title {
+  padding: 3rem 15px 1rem 15px;
+  color: #0c1b44;
+  width: 70%;
+  max-width: 1200px;
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
 .my-video-box {
   width: 100%;
   position: relative;
@@ -556,43 +593,6 @@ a:visited, a:hover, a:active {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.my-slider {
-  max-width: 500px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.my-slider .swiper-pagination {
-  position: relative;
-  width: 100%;
-  padding-top: 8px;
-}
-
-.my-slider .swiper-pagination .swiper-pagination-bullet {
-  cursor: pointer;
-  margin: 3px;
-  width: 7px;
-  height: 7px;
-  display: inline-block;
-  border-radius: 100%;
-  background: #0c1b44;
-  opacity: 0.3;
-}
-
-.my-slider .swiper-pagination .swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #0c1b44;
-}
-
-.my-slider .swiper-container .show {
-  opacity: 1;
-}
-
-.my-slider .swiper-button-next, .my-slider .swiper-button-prev {
-  transition: opacity .3s;
-  opacity: 0;
 }
 
 /*Footer Part*/
@@ -714,7 +714,7 @@ a:visited, a:hover, a:active {
 
 @media (max-width: 991.98px) {
   .my-top-box {
-    padding: 2.5rem 0 1.5rem 0;
+    padding: 2.5rem 0 2.5rem 0;
   }
   .my-top-flexbox-showbg {
     margin: 0 auto;
@@ -729,14 +729,19 @@ a:visited, a:hover, a:active {
   .my-art-title, .my-art-flexbox, .my-top-flexbox {
     width: 100%;
   }
+  .my-top-flexbox {
+    margin: 4rem auto 4rem auto;
+  }
   .my-art-textbox {
     padding: 1.5rem 1.25rem 2rem 1.25rem;
+  }
+  .my-skills-textbox {
+    margin: 0 0.6rem 1.5rem 0.6rem;
   }
 }
 
 /*開發用*
 @media (min-width: 992px) {
-
   body , #my-navbar, #mynavitem{
     max-width: 1200px;
     width: 40%;
@@ -745,7 +750,6 @@ a:visited, a:hover, a:active {
   margin-top: 5rem;
 }
 .my-art-box{
-
  flex: 1 1 100%;
 }
 }/
